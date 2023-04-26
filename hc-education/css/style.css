@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* 레이아웃 공통 */
+html, body{position:relative; width:100%;}
+body{color:#707070; font-size:16px; line-height:1.6; font-family:"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",helvetica,sans-serif; word-break:break-all;letter-spacing:-0.6px;max-width:1920px;margin:0 auto;}
+main{display:block;}
+.confirmIframe body{overflow:hidden;}
+#progressScroll{display:none;}
+#wrapper{overflow:hidden;}
+
+
+/* 본문바로가기 */
+.skipnav{position:absolute;z-index:2999;top:-100px;width:100%;padding:0;list-style:none;font-size:14px;}
+.skipnav li{position:relative;top:0;left:0;width:100%}
+.skipnav li a{display:block;position:absolute;top:0;width:100%;padding:15px 0;background:#000;color:#fff;text-align:center;text-decoration:none}
+.skipnav li a:focus,.skipnav li a:active{top:100px}
+
+/* slick 플러그인 */
+.slick-slider .slick-list{display:block; overflow-x:hidden; overflow-y:hidden; position:relative}
+.slick-slider .slick-list.dragging{cursor:pointer}
+.slick-slider .slick-list .slick-track{display:block; position:relative; top:0; left:0}
+.slick-slider .slick-list .slick-track:before, .slick-slider .slick-list .slick-track:after{display:table; content:''}
+.slick-slider .slick-list .slick-track:after{clear:both}
+.slick-slider .slick-list.slick-loading .slick-track{visibility:hidden}
+.slick-slider .slick-list .slick-track .slick-slide{display:none; float:left}
+.slick-slider[dir='rtl'] .slick-list .slick-track .slick-slide{float:right}
+.slick-slider .slick-list .slick-track .slick-slide img{display:block;width:100%;}
+.slick-slider .slick-list .slick-track .slick-slide.slick-loading img{display:none}
+.slick-slider.slick-initialized .slick-list .slick-track .slick-slide{display:block}
+.slick-slider .slick-list .slick-track.slick-loading .slick-slide{visibility:hidden}
+.slick-slider .slick-arrow.slick-hidden{display:none}
+.slick-dots{display:flex;justify-content:center;align-items:center;}
+.slick-dots li{transition:transform .3s;transform:scale(.8);margin:0 0px}
+.slick-dots li.slick-active{transform:scale(1);margin:0 3px;}
+.slick-dots li a{display:block;width:70px;height:70px;}
+.slick-dots img{display:block;width:100%;height:100%;object-fit:cover;}
+
+
+/* 공통 */
+.inner{max-width:1200px;position:relative;margin:0 auto;/* padding:0 20px; */}
+body{font-family: 'GmarketSans';}
+
+@media (max-width:1399px) {
+  .inner{padding: 0 20px;}
+}  
+@media (max-width:760px) {
+ .inner{padding:0 15px;}
+}
+
+#header{position:fixed;flex-wrap: wrap; z-index:2000;top:0;left:0;right:0;transition:all .3s;display:flex;justify-content:center;max-width:1920px;margin:0 auto;}
+.depth-01{display:flex;align-items:flex-start;justify-content:center;}
+.depth-02{display:block;}
+#header h1{position:absolute;left:0px;z-index:20;transition:all .25s;top:50%;margin-top:-26px;}
+#header h1 a,
+#header h1 img{display:block; image-rendering:-webkit-optimize-contrast;transition:all .25s;height:46px;}
+#header nav{display:flex;align-items:center;justify-content:center;position:relative; height: 99px; padding: 0 125px 0 264px;}
+#header .depth-01{position: relative; display:flex; height: 99px;}
+#header .depth-01 li{position: relative;}
+#header h2 a{display:block;padding:0 25px;height:99px;line-height:99px; color:#313131;font-size:21px;font-weight:500;  text-align: center;}
+#header .depth-01 li h2 a:hover{font-weight: 700; color:#1c7cdc;}
+#header .depth-01 li h2 a span{display: block; font-size: 20px;}
+#header .btn_box{position:absolute;right:0;image-rendering:-webkit-optimize-contrast;display:block;  top:49px; margin-top:-12px; font-size: 14px; font-weight: 500; background:url(/page/governor/images/common/w_menu.png) no-repeat center center /cover}
+#header .btn_box a:hover{color: #004f9f;}
+#header .btn_box .login{position: relative;}
+#header .btn_box .join{padding-left: 20px;}
+#header .btn_box .login::after{content: ''; background: #ccc; width: 5px; height: 5px; border-radius: 50%; position: absolute; right: -13px; top: 5px;}
+#header .header_top{width: 100%; height: 40px; line-height: 40px; margin: 0 auto; background: #012a53; text-align: right; font-size: 0;}
+#header .header_top .page_btn .countyoffice{display: inline-block; background: #073e74; padding: 0 62px 0 42px; height: 40px; font-size: 16px;}
+#header .header_top .page_btn .campus{display: inline-block; background: #7e801b; padding: 0 42px 0 20px; height: 40px; font-size: 16px;}
+#header .header_top .page_btn a span{position: relative; display: inline-block; color: #fff; padding: 2px 0;}
+#header .header_top .page_btn a span::after{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -270px -243px; width: 15px; height: 15px; position: absolute; right: -20px; top: 11px; background-size: 368px 309px;}
+#header .header_bottom{width: 100%; height: 99px; border: 1px solid #dcdcdc; border-width: 1px 0; background: #fff;}
+#header .bg_pc{position:fixed;top:139px;z-index:1001;height:0;background:#fff;background-size:cover;display:none;left:-15px;right:0px; transition:top .3s;}
+#mask{display: none; position:fixed;z-index:1000;top:0;left:0;right:0;bottom:0;display:none;animation:mask1 .15s 1 both ease;}
+#mask.active{background:rgba(0,0,0,.5); display: block;}
+#header .depth-02{position:absolute; top:96px; left:0;  width: 800px; z-index: 1002; overflow:hidden;transition:top .3s; display: none; padding-top:5px;}
+#header .depth-02 li{margin:5px 0px 0 0;padding:0px;  display: inline-block; animation:gnb1 .3s .1s 1 both ease;}
+#header.mobile-mode .depth-02 li{display: block;}
+#header .depth-02 > li:nth-child(2){animation-delay:.15s;}
+#header .depth-02 > li:nth-child(3){animation-delay:.2s;}
+#header .depth-02 > li:nth-child(4){animation-delay:.25s;}
+#header .depth-02 > li:nth-child(5){animation-delay:.3s;}
+#header .depth-02 h3 a{display: flex; height:45px;transition:all .05s;color:#393939;font-size:17px;font-weight:300;word-break:keep-all;align-items:center;justify-content:center; }
+#header .depth-02 h3 a:hover{color:#1c7cdc;;}
+#header .depth-02 h3 a span{display:inline-block;height:40px;border-radius:5px; font-size: 18px; font-weight: 500; background:transparent;padding:0 25px;line-height:40px;white-space:nowrap;transition:all .05s;}
+#header .depth-02.active{display: block;}
+ #header .sitemap{display: none;}
+.mobile-logo,
+.mobile-close{display:none}
+#header h2 a:before{content:'';display:none;transition:transform .2s;position:absolute;width:13px;height:8px;right:10px;image-rendering: -webkit-optimize-contrast;top:50%;margin-top:-4px;background:url(/page/governor/images/common/arrow01.png) no-repeat center center /cover;}
+#header h2.active a:before{transform:rotate(-180deg);transform-origin:50% 50%;}
+.m_btn_box{display: none;}
+@keyframes mask1{ 
+  0%{opacity:0;}
+  100%{opacity:1;} 
+}
+
+@keyframes gnb1{ 
+  0%{opacity:0;transform:translateY(-100%);}
+  100%{opacity:1;transform:translateY(0%);} 
+}
+
+
+#header.fixed h2 a{height:99px;line-height:99px;font-size:20px;}
+#header.fixed h1 img{height:40px;}
+#header.fixed h1{margin-top: -22px;}
+#header.fixed .bg_pc{top:139px;}
+#header.fixed .depth-02{top:96px;}
+@media (max-width:1720px) {
+  #header{left:0;right:0;}
+}
+
+@media (max-width:1399px) {
+  
+  #header{left:0;right:0;padding-right:0px;height:65px;}
+  #header h1{margin-top:15px;}
+  #header h1 a,
+  #header h1 img{height:28px;}
+  #header .header_top{display: none;}
+  #header .header_top .inner{padding: 0;}
+  #header .header_bottom{padding: 0 20px; height: 60px;}
+  #header .btn_box .login{display: none !important;}
+  #header .btn_box .join{display: none;}
+  #header .sitemap{display: block;  background: url(/page/hc-education/image/menu_b.png)no-repeat; background-size: cover; width: 24px; height: 24px; position: absolute; right: -49px; top: -3px; font-size: 0;}
+  #header .bg_pc{display:none !important;}
+  #header nav{position:fixed;transition:all .5s ease;display:block;top:0;width:100%;right:-1400px;background:#fff;background-size:cover;height:100vh;padding:0;overflow-y:auto;z-index:50;}
+  #header .depth-01{display:block;}
+  #header .depth-01 > li{border:1px solid #e8e8e8;border-width:1px 0;}
+  #header .depth-01 > li + li{margin-top:-1px;}
+  #header .depth-01 li h2 a span{position: relative; font-size: 28px; color: #1c7cdc; padding-left: 29px; font-weight: 600;}
+  #header .depth-01 li h2 a span::before{content: ''; background: #1c7cdc; width: 17px; height: 17px; border-radius: 50%; 
+  position: absolute; left: 0; top: 23px;}
+  #header .btn_box{top: 33px; right: 54px;}
+  #header h2 a{height: 65px;line-height: 71px;padding:0 20px;font-size: 20px;position:relative;text-align:left;overflow:hidden;}
+  #header.fixed h2 a{height:65px;line-height:71px;font-size:20px;}
+  #header h2 a:before{display:block;}
+  #header .depth-02{position:relative;top:0 !important;padding:5px 0 10px 10px;border-top:1px solid #959595}
+  #header.mobile-mode .depth-02{border: none; padding: 5px 0 10px 40px;}
+  #header .depth-02 > li{margin-right:0;}
+  #header .depth-02 h3 a{justify-content: flex-start;height: 38px;font-size: 16px;}
+  #header .depth-02 h3 a span{padding:0 15px 0 10px;}
+  #header nav.active{right:0;}
+  #header.fixed h1{margin-top:18px;}
+  #header.fixed h1 img{height:25px;opacity:.5;}
+  #header .depth-02 h3.active a{color:#fff;}
+  #header .depth-02 h3.active a span{background:#df3128;}
+  .mobile-logo,
+  .mobile-close{display:block}
+  .mobile-logo{display:block;max-width:300px;margin-right:120px;}
+  .mobile-logo img{display:block;}
+  .mobile_box{display: flex; align-items: center; height: 67px; padding: 0 20px;}
+  .mobile-close{width:24px;height:24px;font-size:0; background: url(/page/hc-education/image/menu_off_b.png) center center; position:absolute;right:20px;top:22px;image-rendering:-webkit-optimize-contrast;}
+  .m_btn_box{display: block; width: 100%; text-align: center; border-bottom: 1px solid #e8e8e8; padding: 30px 0;}
+  .m_btn_box a{font-size: 20px; font-weight: 500;}
+  .m_btn_box a:hover{color: #004f9f;}
+  .m_btn_box .join{padding-left: 20px; position: relative;}
+  .m_btn_box .join::before{content: ''; width: 6px; height: 6px; background: #ccc; border-radius: 50%; position: absolute; left: 5px; top: 6px;
+  }
+}
+
+@media (max-width:990px) {
+  #header nav{right: -1000px;}
+}  
+
+@media (max-width:760px) {
+}  
+@media (max-width:475px) {
+  #header nav{right:-490px;background:#fff; width:100vw}
+}
+
+
+#footer{position:relative;background:#2f3543;padding:34px 0 120px;z-index:100;}
+#footer .family{position:relative; width:200px;position:absolute;right:0; top:0;}
+#footer a{color: #f3f3f3;}
+#footer .link{padding: 9px 0 0 42px;}
+#footer .link a{margin-right: 26px; font-weight: 500;}
+#footer .link a:hover{color: #8ec6f2;}
+#footer .footer_box{display: flex;}
+#footer h1{text-align:left;}
+#footer h1 a{display:inline-block;}
+#footer h1 a img{height:40px;image-rendering:-webkit-optimize-contrast;}
+#footer p{margin-top:21px;text-align:center;color:#ebebeb;font-size:16px;line-height:1.4;opacity:.6;word-break:keep-all;}
+#footer address{font-style: inherit; color: #f3f3f3; padding-top: 30px; font-size: 15px;}
+#footer .open{height:40px;line-height:36px; display:block; padding: 0 60px 0 2px; z-index:2;position:relative; font-weight: 500; border-bottom: 2px solid #fff;}
+#footer .open::after{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -207px -176px; width: 14px; height: 8px; background-size: 368px 309px; position: absolute; right: 2px; top: 12px;}
+#footer .view{display: none; padding:8px 0;background:#fff;position:absolute;bottom:53px;left:-1px;right:-1px;border:1px solid #111; border-radius: 3px; opacity:0;transform:translateY(30px);transition:all .2s ease;}
+#footer .view a{display:block;width:100%;height:30px;line-height:30px;font-size:15px;padding-left:23px;color:#111;}
+#footer .open.active::after{transform: rotate(180deg);}
+#footer .view a:hover{text-decoration: underline; text-underline-position: under;}
+#footer .open.active + .view{display:block;animation:view1 .3s 1 both ease-in;opacity:1;transform:translateY(0%);}
+
+  
+@media (max-width:1399px) {
+  #footer .family{right: 20px;}
+  #footer{padding:33px 0 25px;}
+  #footer h1 a img{height:35px;}
+  #footer p{margin-top:15px;font-size:13px;}
+  #footer p span{display:block;margin-top:5px;}
+  #footer p em{display:none;} 
+}
+
+@media (max-width:800px) {
+  #footer{padding:25px 0 25px;}
+  #footer .family{left: 50%; top: 74px; transform: translate(-50%);}
+  #footer .link{padding: 0;}
+  #footer .link a{font-size: 15px; margin-right: 12px;}
+  #footer .clause{display: flex; justify-content: center; padding-bottom: 44px;}
+  #footer .footer_box{flex-direction: column; align-items: center;}
+  #footer address{font-size: 14px; text-align: center; word-break: keep-all; padding-top: 18px;}
+  #footer .open{font-size: 14px; height: 35px; line-height: 35px;}
+  
+}  
+ 
+
+#btn-top{position:absolute; top: 700px; left:50%;margin-left:751px; margin-top: -40px; display:block; background: url(/page/hc-education/image/top.png) no-repeat 50% 50%; background-size: cover; width: 53px; height: 53px;
+  transition: all .2s; font-size: 0; z-index:1001; image-rendering: -webkit-optimize-contrast;}
+#btn-top:active{transform:scale(.97);}
+
+@media (max-width:1699px) {
+  #btn-top{position:fixed;left:auto;margin-left:0;right:20px;bottom:20px!important;top:auto !important;}
+}
+
+@media (max-width:760px) {
+  #btn-top{right:15px;bottom:15px !important;width:35px;height:35px;;}
+} 

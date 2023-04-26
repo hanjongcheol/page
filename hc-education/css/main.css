@@ -1,0 +1,373 @@
+#visual{position: relative; display: flex; align-items: center; margin-top: 139px; height: 401px;}
+#visual::before{content: ''; background: url(/page/hc-education/image/visual_bg.png)no-repeat center center; width: 1920px; height: 401px; 
+position: absolute; left: 50%; top: 0; z-index: -2; margin-left: -960px;}
+#visual .visual_text{text-align: center; transition: all .5s; padding-top: 19px; text-shadow: 2px 2px 12px rgba(0,0,0,0.5);}
+#visual .visual_text span{color: #fff; font-size: 48px; line-height: 1.4;}
+#visual .visual_text span .blue{color: #00a4ff;}
+#visual .visual_text span .orange{color: #f39200;}
+#visual .visual_text strong{display: inline-block; font-size: 64px; color: #c8ff2e;}
+
+@media (max-width:1399px) {
+    #visual{margin-top: 60px;}
+    #visual .visual_text{}
+}   
+
+@media (max-width:991px) {
+    #visual{height: 340px;}
+    #visual .visual_text{padding-top: 35px; padding-bottom: 0;}
+    #visual .visual_text span{font-size: 30px;}
+    #visual .visual_text strong{font-size: 40px;}
+}    
+
+@media (max-width:760px) {
+    #visual{height: 275px;}
+    #visual .visual_text{padding-top: 15px; margin-bottom: 80px;}
+    #visual .visual_text span{font-size: 20px;}
+    #visual .visual_text strong{font-size: 30px;}
+}    
+#search{position: relative; background: url(/page/hc-education/image/search_bg.png)no-repeat center center; height: 217px; margin-top: -44px;}
+#search .inner{height: 217px;}
+#search .illustrate{position: absolute; right: 118px; bottom: 132px; transition: all .5s;}
+#search .illustrate img{display: block; width: 444px; height: 316px;}
+#search .search_title{position: relative; display: inline-block; padding:22px 0 0 182px; color: #fff; line-height: 1.3;}
+#search .search_title span{display: inline-block; position: relative; font-size: 26px;}
+#search .search_title span::after{content: ''; background: #fff; width: 178px; height: 2px; position: absolute; left: 0; bottom: 2px;}
+#search .search_title strong{display: inline-block; text-shadow: 2px 3px 10px rgba(0,0,0,0.5);}
+#search .search_img{position: absolute; top: -10px; left: 0;}
+#search .search_img img{display: block; width: 154px; height: 106px;}
+#search .search_wrap{ display: flex; padding-top: 32px;}
+.select_box{position: relative;}
+.select_box::after{content: ''; background:url(/page/hc-education/image/ed_sprites.png) no-repeat -312px -222px; background-size: 368px 309px; width: 12px; height: 10px;
+position: absolute; right: 24px; top: 50%; transform: translateY(-50%); z-index: 1;}
+.ed_select{display: inline-block; position: relative; width: 190px; height: 63px; margin-right: 9px; border: 3px solid #a7d3ff; border-radius: 30px;  padding:0 24px; font-size: 17px; font-family: 'GmarketSans'; 
+font-weight: 500; appearance: none; box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.45);}
+input:focus::-webkit-input-placeholder {color:transparent;}
+#search .search_box{margin-left: 37px; position: relative; background: #fff; box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.45); width: 568px; height: 63px; border: 3px solid #a7d3ff; border-radius: 30px;}
+#search .search_box::before{content: ''; width: 10px; height: 10px; background: #1573d3; border-radius: 50%; position: absolute; left: -31px; top: 50%; transform: translateY(-50%);}
+#search .search_box input[type=submit]{background: url(/page/hc-education/image/research.png)no-repeat; position: absolute; right: -5px; top: -3px; width: 85px; height: 63px; font-size: 0;}
+input[type=search]{ font-family: 'GmarketSans'; width: 85%; font-size: 18px; padding:0 34px; height: 57px; border-radius: 27px 0 0 27px;
+} 
+#search .check_box_01{position: absolute; right: 179px; top: 44%; transform: translateY(-44%); color: #fff;}
+#search .check_box_02{position: absolute; right: 57px; top: 44%; transform: translateY(-44%); color: #fff;}
+input[type=checkbox]{display: none;}
+input[type=checkbox] + label{width: 24px; height: 24px; border-radius: 50%; background: #fff; cursor: pointer; box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.45);}
+input[type=checkbox]:checked + label{background: url(/page/hc-education/image/check.png)no-repeat #fff center; border-radius: 50%;}
+input[type=checkbox] + label span{position: absolute; left: 30px; width: 200px;  height: 50px; font-size: 18px; font-weight: 500;}
+
+@media (max-width:1700px) {
+    #search .illustrate{right: 15px; bottom: 147px;}
+    #search .illustrate img{width: 344px; height: 216px;}
+}    
+
+@media (max-width:1399px) {
+    #search .inner{padding: 0 20px;}
+    #search .search_wrap{ display: flex; padding-top: 40px;}
+    #search .search_title{padding: 22px 0 0 104px;}
+    #search .search_title span{font-size: 23px;}
+    #search .search_title span::after{bottom: 0;}
+    #search .search_img img{width: 97px; height: 73px;}
+    #search .search_img{left: 20px; top: 10px;}
+    #search .search_box{width: 45%;}
+    input[type=search]{width: 82%;}
+    #search .check_box_01{right: 199px;}
+    #search .check_box_02{right: 77px;}
+}   
+@media (max-width:1050px) {
+    input[type=search]{width: 90%;}
+}    
+
+@media (max-width:991px) {
+    #search{background-size: cover; width: 100%; height: 283px; margin-top: 0; background-position: left;}
+    #search .illustrate{bottom: 263px;}
+    #search .illustrate img{width: 222px; height: 158px;}
+    #search .search_wrap{justify-content: space-between; flex-wrap: wrap;}
+    .select_box{width: 30%;}
+    #search .search_box{margin-left: 0; margin-top: 18px; width: 100%;}
+    #search .search_box::before{display: none;}
+    input[type=search]{width: 88%;}
+    .ed_select{width: 100%;}
+}    
+
+@media (max-width:760px) {
+    #search .search_title{padding: 25px 0 0 79px;}
+    #search .illustrate img{width: 178px; height: 130px;}
+    #search .search_title span{font-size: 18px;}
+    #search .search_title span::after{width: 123px;}
+    #search .search_img{top: 18px;}
+    #search .search_img img{width: 77px; height: 53px;}
+    #search .search_wrap{padding-top: 55px;}
+    .select_box::after{right: 15px;}
+    input[type=search]{width: 74%; padding: 0 15px;}
+    input::placeholder{font-size: 14px;}
+    input[type=checkbox] + label span{font-size: 15px;}
+    .ed_select{height: 50px; padding: 0 15px; font-size: 14px;}
+}
+
+@media (max-width:360px) {
+    .select_box::after{right: 12px;}
+    .ed_select{font-size: 13px;}
+}    
+
+#shortcut{position: relative; padding: 40px 0 36px; background: #f5f8ff;}
+#shortcut .objet_tit, #shortcut .classification_tit{padding: 0 70px 0 40px;}
+#shortcut .objet_tit span{position: relative; font-size: 18px; color: #1c7cdc; font-weight: 500;}
+#shortcut .objet_tit span::after{content: ''; width: 76px; height: 2px; background: #88b0e9; position: absolute; bottom: -3px; right: 0;}
+#shortcut .objet_tit span::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png) no-repeat -336px -5px;
+background-size: 368px 309px; width: 27px; height: 27px; position: absolute; left: -40px; bottom: 0;}
+#shortcut .objet_tit strong{font-size: 28px; color: #0052a4; padding-right: 10px;}
+#shortcut .objet_tit strong::after{content: ''; width: 80px; height: 2px; background: #819dc9; position: absolute;  bottom: -3px; left: 0;}
+#shortcut .classification_tit span{position: relative; font-size: 18px; color: #fea100; font-weight: 500;}
+#shortcut .classification_tit span::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png) no-repeat -336px -42px; 
+background-size: 368px 309px; width: 27px; height: 27px; position: absolute; left: -40px; bottom: 0;}
+#shortcut .classification_tit span::after{content: ''; width: 76px; height: 2px; background: #fbc486; position: absolute; bottom: -3px; right: 0;}
+#shortcut .classification_tit strong{font-size: 28px; color: #fe6c00; padding-right: 10px;}
+#shortcut .classification_tit strong::after{content: ''; width: 80px; height: 2px; background: #fba882; position: absolute; bottom: -3px; left: 0;}
+#shortcut .objet, #shortcut .classification{flex: 1;}
+#shortcut .objet_box li a, #shortcut .classification li a{position: relative; display: flex; padding-left: 26px; justify-content: center; align-items: center;   margin-right: 13px; background: #fff; color: #111; 
+font-weight: 500; font-size: 18px; border-radius: 15px; height: 60px; box-shadow: 2px 2px 6px 3px rgba(0,0,0,0.1);}
+#shortcut .classification li a{padding-left: 28px;}
+#shortcut .objet_box li .wrap{justify-content: center; padding-left: 0;}
+#shortcut .objet_box li .wrap::before{width: 0; height: 0;}
+#shortcut .objet_box li a::before, #shortcut .classification li a::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png) no-repeat; width: 28px; height: 34px;
+background-size: 368px 309px; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);}
+#shortcut .objet_box li .school::before{background-position: -211px -198px;}
+#shortcut .objet_box li .elementary::before{background-position: -5px -271px;}
+#shortcut .objet_box li .middle::before{background-position: -43px -270px;}
+#shortcut .objet_box li .aduit::before{background-position: -81px -269px;}
+#shortcut .objet_box li .sir::before{background-position: -119px -269px;}
+#shortcut .objet_box li a:hover, #shortcut .classification li a:hover{background: #e8ecf7;}
+#shortcut .objet_box li a:hover{outline: 1px solid #c3d4fb;}
+#shortcut .classification li a:hover{outline: 1px solid #ffcd9c;}
+#shortcut .objet_box li:nth-child(6n) a, #shortcut .classification li:nth-child(6n) a{margin-right: 0;}
+#shortcut .objet_box, #shortcut .classification_box{display: flex; align-items: center;}
+#shortcut .classification_box{margin-top: 18px;}
+#shortcut .classification li .literacy::before{background-position: -196px -269px; width: 29px; height: 28px;}
+#shortcut .classification li .supplement::before{background-position: -276px -269px; width: 28px; height: 25px;}
+#shortcut .classification li .job::before{background-position: -336px -79px; width: 27px; height: 25px;}
+#shortcut .classification li .art::before{background-position: -336px -114px; width: 26px; height: 25px;}
+#shortcut .classification li .art::before{background-position: -336px -114px; width: 26px; height: 25px;}
+#shortcut .classification li .refinement::before{background-position: -336px -183px; width: 23px; height: 25px;}
+#shortcut .classification li .join::before{background-position: -235px -269px; width: 31px; height: 25px;}
+#shortcut .objet ul, #shortcut .classification ul{display: flex; align-items: center;}
+#shortcut .objet ul li, #shortcut .classification ul li{flex: 1;}
+
+
+
+@media (max-width:1399px) {
+    #shortcut .objet_box li a, #shortcut .classification li a{font-size: 16px;}
+}    
+
+
+@media (max-width:1120px) {
+    #shortcut .classification li a{padding-left: 42px;}
+    #shortcut .objet_box li a{padding-left: 21px;}
+    #shortcut .objet_box li a::before, #shortcut .classification li a::before{left: 6px;}
+}
+
+@media (max-width:1024px) {
+    #shortcut .classification li a{padding-left: 30px;}
+}
+
+@media (max-width:991px) {
+    #shortcut{padding: 25px 0;}
+    #shortcut .objet_tit, #shortcut .classification_tit{padding: 0 70px 20px 40px;}
+    #shortcut .objet_box, #shortcut .classification_box{flex-direction: column; align-items: normal;}
+    #shortcut .objet_box li a, #shortcut .classification li a{font-size: 16px;}
+}    
+
+@media (max-width:768px) {
+    #shortcut .classification li a{padding-left: 42px;}
+}    
+@media (max-width:760px) {
+    #shortcut .classification_tit span{font-size: 16px;}
+    #shortcut .classification_tit strong{font-size: 25px;}
+    #shortcut .objet_tit span{font-size: 16px;}
+    #shortcut .objet_tit strong{font-size: 25px; padding-right: 5px;}
+    #shortcut .objet_box li a, #shortcut .classification li a{margin-right: 20px; margin-bottom: 15px; padding: 0;}
+    #shortcut .objet_box li:nth-child(2n) a,
+    #shortcut .classification li:nth-child(2n) a{margin-right: 0;}
+    #shortcut .classification li a{padding-left: 12px;}
+    #shortcut .objet ul, #shortcut .classification ul{flex-wrap: wrap;}
+    #shortcut .objet ul li, #shortcut .classification ul li{flex: 1 50%;}
+    #shortcut .objet_box li a::before, #shortcut .classification li a::before{left: 17px;}
+}    
+
+@media (max-width:360px) {
+    #shortcut .objet_box li a::before, #shortcut .classification li a::before{left: 10px;}
+    #shortcut .classification li a{padding-left: 14px;}
+}    
+
+#board{position: relative; padding: 67px 0; color: #111;}
+#board .board_wrap{display: flex; justify-content: space-between;}
+#board .notice{ font-size: 0;}
+#board .notice h2{font-size: 30px; font-weight: 600;}
+#board .notice .post:nth-child(4){padding-right: 0;}
+#board .post{display: inline-block; width: 32.5%; height: 146px; padding-right: 20px;}
+#board .post a{display: block; margin:22px 40px 0 0;}
+#board .post a span{display: inline-block; font-size: 18px; 
+font-weight: 500; padding-top: 20px; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+#board .post a em{position: relative; display: block; border-top: 1px solid #185287; margin-top: 37px;  padding-top: 30px; color: #777; padding-left: 27px; font-size: 16px;}
+#board .post a em::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -336px -248px;
+background-size: 368px 309px; width: 18px; height: 16px; position: absolute; left: 0; top: 32px;}
+#board .post a .new{background: url(/page/hc-education/image/ed_sprites.png) no-repeat -206px -5px; width: 54px; height: 77px; transition: all .5s; background-size: 368px 309px; opacity: 0.2;}
+#board .post a:hover .new{opacity: 1;}
+#board .alarm{display: inline-block;}
+#board .alarm h2{font-size: 30px; font-weight: 600;}
+#board .alarm .slick-wrap{max-width: 440px; position: relative; border-radius: 10px;}
+#board .alarm .control{position: absolute; top: -60px; right: 0; z-index: 100;}
+#board .alarm .control button{margin-right: 10px; background: url(/page/hc-education/image/ed_sprites.png) no-repeat; background-size: 368px 309px; width: 7px; height: 10px;}
+#board .alarm .control .prev{background-position: -355px -274px;}
+#board .alarm .control .next{background-position: -135px -90px;}
+#board .alarm .control .pause{background-position: -232px -176px; width: 6px; height: 8px;}
+#board .alarm .control .play{display: none; background-position: -248px -176px; width: 6px; height: 8px;}
+#board .alarm .control .count{display: inline-block; font-size: 14px; padding-right: 22px; color: #b5b5b5; font-weight: 500;}
+#board .alarm .control em{color: #333;}
+#board .alarm .slick-box{overflow: hidden; border-radius: 10px; margin-top: 20px;}
+#board .alarm .slick-box .slick img{width: 440px; height: 250px;}
+
+@media (max-width:1024px) {
+    #board .alarm{width: 35%;}
+}
+
+@media (max-width:991px) {
+    #board{padding: 30px 0;}
+    #board .board_wrap{flex-direction: column;}
+    #board .post{width: 33.3%; height: 100%;}
+    #board .post a{margin-right: 0;}
+    #board .post a span{-webkit-line-clamp: 1;}
+    #board .alarm{width: 100%; margin-top: 30px;}
+    #board .alarm .slick-wrap{max-width: 100% !important;}
+    #board .alarm .slick-box .slick img{width: 100%; height: 100%;}
+
+}   
+
+@media (max-width:760px) {
+    #board .notice h2{font-size: 25px;}
+    #board .post{display: flex; flex-direction: column; width: 100%; padding-right: 0;}
+    #board .post a span{font-size: 15px;}
+    #board .post a em{font-size: 14px; margin-top: 20px;}
+    #board .alarm h2{font-size: 25px;}
+}    
+
+@media (max-width:375px) {
+    #board .post a em{font-size: 12px;}
+}    
+
+#guide{position: relative; color: #111; padding-bottom: 121px;}
+#guide::before{content: ''; background: url(/page/hc-education/image/guide_bg02.png)no-repeat left top; width: 2426px; height: 997px; position: absolute; right: -76px; top: 212px; z-index: -2;}
+#guide::after{content: ''; background: url(/page/hc-education/image/bg1.png)no-repeat center center; width: 647px; height: 522px; position: absolute; right: -69px; bottom: -25px; background-size: cover; z-index: -1;}
+#guide .guide_tit{padding-top: 14px; position: relative; padding:38px 0 0 42px;}
+#guide .guide_tit::before{content: ''; background: #e7f1f9; width: 387px; height: 141px; position: absolute; left: 0; top: 0; border-radius: 10px 0 130px 0;}
+#guide .guide_tit span{position: relative; font-size: 47px; font-weight: 600;}
+#guide .guide_tit span::after{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -206px -92px; background-size: 368px 309px; width: 53px; height: 74px;
+position: absolute; right: -65px; bottom: 10px;}
+#guide .guide_tit em{color: #1c7cdc;}
+#guide .use{display: flex; width: 100%; align-items: end; justify-content: space-between;}
+#guide .guide_wrap{display: flex; justify-content: space-between; background: #f5fbff; border: 2px solid #9ac1e7; width: 58%; height: 441px; padding: 0 40px 35px 0; box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.15); border-radius: 10px;}
+#guide .guide_wrap .guide_division ul{padding-top: 110px; position: relative; padding-left: 42px;}
+#guide .guide_wrap .guide_division ul::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -336px -149px;
+background-size: 368px 309px; width: 25px; height: 24px; position: absolute; left: 42px; top: 71px;}
+#guide .guide_wrap .guide_division ul li span{font-size: 17px;}
+#guide .guide_wrap .guide_division strong{padding-left: 1px;}
+#guide .guide_wrap .guide_short .register{position: relative; display: flex; align-items: center; background: url(/page/hc-education/image/illust3.png)no-repeat 50% 50%; width: 280px; height: 200px; margin-top: 24px; background-size: cover;}
+#guide .guide_wrap .guide_short .register:hover::after,
+#guide .guide_wrap .guide_short .place:hover::after{background-position: -163px -115px; background-size: 368px 309px;}
+#guide .guide_wrap .guide_short .register::after{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -270px -201px; background-size: 368px 309px; 
+width: 32px; height: 32px; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);}
+#guide .guide_wrap .guide_short .register em{display: block; padding-left: 154px; line-height: 1.2; font-size: 20px; font-weight: 500;}
+#guide .guide_wrap .guide_short .register strong{font-size: 22px;}
+#guide .guide_wrap .guide_short .place{position: relative; display: flex; align-items: center; background: url(/page/hc-education/image/illust4.png)no-repeat 50% 50%; width: 280px; height: 200px; background-size: cover;}
+#guide .guide_wrap .guide_short .place::after{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -270px -201px; background-size: 368px 309px; 
+width: 32px; height: 32px; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);}
+#guide .guide_wrap .guide_short .place em{display: block; padding-left: 154px; line-height: 1.2; font-size: 20px; font-weight: 500;}
+#guide .guide_wrap .guide_short .place strong{font-size: 22px;}
+#guide .menu{padding-top: 58px; width: 37%; font-size: 0;}
+#guide .menu h2{font-size: 30px; font-weight: 500; padding-bottom: 26px;}
+#guide .menu h2 strong{padding-right: 7px;}
+#guide .menu ul{display: flex; flex-wrap: wrap;}
+#guide .menu ul li{flex: 1 45%; margin-right: 18px;}
+#guide .menu ul li a{position: relative; z-index: 1; display: flex; align-items: center; flex-direction: column;  justify-content: center; width: 100%; height: 150px; box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.15); background: #fff; margin: 0 0 16px 0; border-radius: 10px;}
+#guide .menu ul li:nth-child(2n){margin-right: 0;}
+#guide .menu ul li:nth-child(3) a,
+#guide .menu ul li:nth-child(4) a{margin-bottom: 0;}
+#guide .menu ul li a img{display: inline-block; width: 84px; height: 75px;}
+#guide .menu ul li a span{display: block; font-size: 20px; font-weight: 500;}
+#guide .menu ul li a:hover span{font-weight: 600;}
+#guide .menu ul li a .club{padding-bottom: 5px;}
+#guide .menu ul li a .bank{padding-top: 2px;}
+#guide .menu ul li a .gallery{padding-top: 1px;}
+#guide .menu ul li a .room{padding-bottom: 3px;}
+#guide .menu ul li a::before{content: ''; position: absolute; left: 1.5px;  top: 1px; z-index: -1; border-radius: 6px; background: #fff; width: 99%; height: 144px;}
+#guide .menu ul li a:hover{
+border: 2px solid transparent; border-radius: 10px;
+ background-image:linear-gradient(-150deg, rgba(92,173,236,1) 0%, rgba(107,201,123,1) 70%, rgba(255,148,52,1) 100%);  background-origin: border-box;} 
+   
+
+@media (max-width:1399px) {
+    #guide .guide_tit{padding:38px 0 0 25px;}
+    #guide .guide_wrap{padding: 0 10px 15px 0;}
+    #guide .guide_wrap .guide_division ul li span{font-size: 15px;}
+    #guide .menu{width: 38%;}
+    #guide .menu ul li a::before{left: 1px;}
+    
+}   
+
+@media (max-width:1024px) {
+    #guide .guide_wrap{width: 60%;}
+    #guide .guide_wrap .guide_division ul{padding-left: 25px;}
+    #guide .guide_wrap .guide_division ul::before{left: 26px;}
+    #guide .menu{width: 35%;}
+}  
+
+@media (max-width:991px) {
+    #guide{padding-bottom: 50px;}
+    #guide .use{flex-direction: column;}
+    #guide .guide_wrap{width: 100%; border-top: 2px solid #91bae3;  padding: 0 10px 15px 0;}
+    #guide .guide_wrap .guide_division ul{padding-top: 112px;}
+    #guide .guide_wrap .guide_division ul::before{top: 70px;}
+    #guide .guide_tit span{font-size: 40px;}
+    #guide .guide_wrap .guide_short .register{margin-bottom: 40px;}
+    #guide .menu{width: 100%;}
+    #guide .menu{padding-top: 30px;}
+    #guide .menu ul li a{height: 184px;}
+    #guide .menu ul li a::before{left: 1.5px; height: 178px;}
+   
+}    
+
+
+  
+
+@media (max-width:760px) {
+    #guide{padding-bottom: 35px;}
+    #guide .guide_wrap{flex-direction: column; height: 100%; padding: 0 10px 15px 0;}
+    #guide .guide_wrap .guide_division ul{padding-top: 70px;}
+    #guide .guide_wrap .guide_division ul::before{top: 33px;}
+    #guide .guide_tit{padding:35px 0 0 42px;}
+    #guide .guide_tit::before{width: 230px; height: 100px;}
+    #guide .guide_tit span{font-size: 25px;}
+    #guide .guide_tit span::after{bottom: -11px;}
+    #guide .guide_wrap .guide_short .register{margin-bottom: 15px;}
+    #guide .guide_wrap .guide_short .register,
+    #guide .guide_wrap .guide_short .place{margin-left: 40px;}
+    #guide .guide_wrap .guide_short .register em,
+    #guide .guide_wrap .guide_short .place em{font-size: 16px;}
+    #guide .guide_wrap .guide_short .register strong,
+    #guide .guide_wrap .guide_short .place strong{font-size: 18px;}
+    #guide .menu h2{font-size: 25px;}
+    #guide .menu ul li a{height: 150px;}
+    #guide .menu ul li a span{font-size: 16px;}
+    #guide .menu ul li a::before{width: 99%; left: 1px; height: 144px;}
+}    
+ 
+@media (max-width:667px) {
+    #guide .menu ul li a::before{left: 1.3px;}
+}    
+@media (max-width:414px) {
+    #guide .menu ul li a::before{left: 1px;}
+}    
+   
+@media (max-width:360px) {
+    #guide .guide_wrap .guide_short .register,
+    #guide .guide_wrap .guide_short .place{margin-left: 28px;}
+  
+}    
