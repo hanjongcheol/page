@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(fonts/NotoSansKR-Thin.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/NotoSansKR-Light.woff) format('woff');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url(fonts/NotoSansKR-Regular.woff) format('woff');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url(fonts/NotoSansKR-Medium.woff) format('woff');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url(fonts/NotoSansKR-Bold.woff) format('woff');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   font-display: swap;
+   src: url(fonts/NotoSansKR-Black.woff) format('woff');
+ }
+
+ @font-face {
+  font-family: 'GmarketSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/GmarketSansTTFLight.ttf) format('woff');
+}
+ @font-face {
+  font-family: 'GmarketSans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/GmarketSansTTFMedium.ttf) format('woff');
+}
+ @font-face {
+  font-family: 'GmarketSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/GmarketSansTTFBold.ttf) format('woff');
+}
