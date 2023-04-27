@@ -457,7 +457,7 @@ position: absolute; left: 50%; top: 33px; z-index: 1; margin-left: -73.5px;}
 .member_wrap .step_list li .list_name{display:block;font-weight:normal;}
 .member_wrap .step_list li.active .img_box .ico_terms{background-position:-181px -15px;}
 .member_wrap .step_list li.active .img_box .ico_info{background-position:-10px -176px;}
-.member_wrap .step_list li.active .img_box .ico_complete{background-position:-342px -181px; background-size: 832px 757px;}
+.member_wrap .step_list li.active .img_box .ico_complete{background-position:-347px -181px; background-size: 832px 757px;}
 .member_wrap .step_list li.active .step_num{color:#2b79a1;}
 .member_wrap .step_list li.active .list_name{color:#111; font-weight: 600;}
 .member_wrap .signup_txt_area{margin-top:70px; border-radius: 30px; box-shadow: 7px 9px 32px 0px rgba(0, 0, 0, 0.15);}
