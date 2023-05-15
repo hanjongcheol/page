@@ -1,0 +1,250 @@
+  
+  /* 공통게시판 */
+  .icoFile{display: none !important;}
+  .txa_right{text-align: right;}
+  .skinTb td > img{display: inline-block; margin: 2px 0 0;}
+  .hide-on-large{display: none !important;}
+  #content-bx{padding-top: 92px;}
+  #sub{overflow: hidden; padding-top: 139px;}
+  #sub .skinTb::before { border-color: #313131;}
+  #sub .skinTb { font-size: 18px; }
+  #sub .skinTb-th, #sub .skinTb > tr > th, #sub .skinTb > thead > tr > th, #sub .skinTb > tfoot > tr > th {font-weight: 500; background-color:#f2f2f2; color: #313131; }
+  #sub .skinTb > thead > tr > th { border-bottom: none; height: 59px; padding-bottom: 5px; text-align: center !important;}
+  #sub .skinTb > tbody > tr > th{background: #fff; color: #707070;}
+  #sub .skinIptTxt, #sub .skinSelectBox, #sub .boSrchArea .boMeta, #sub .skinTb > tr > td, #sub .skinTb > thead > tr > td, #sub .skinTb > tfoot > tr > td, #sub .skinTb-td { font-weight: 400;  color: #707070;  font-size: 1.6rem;}
+  #sub .skinSelectBox{position: relative; font-size: 1.7rem; font-weight: 500; color: #333; font-family: 'GmarketSans';}
+  #sub .skinIptTxt{border: 1px solid #d8d8d8; width: 435px; height: 62px; border-radius: 5px; font-weight: 500; color: #333; flex-basis: 68%;}
+  #sub .skinIptTxt.v2{border: none; font-family: 'GmarketSans'; font-weight: 500; color: #333; height: 50px; flex-basis: 44.5%;}
+  #sub .skinIptTxt.v4{flex-basis: 49%;}
+  #sub .skinIptTxt.v5{width: 24%; height: 50px;}
+  #sub .skinIptTxt.v6{height: 50px; flex-basis: 47%;}
+  #sub .skinIptTxt.v7{height: 50px; flex-basis: 64%;}
+  #sub .skinIptTxt.v8{width: 734px; height: 50px; margin-top: 15px;}
+  #sub .skinTb > tbody > tr > td{text-align: center; font-size: 16px; color: #111;}
+  #sub .skinTb > tbody > tr > td a:hover{text-decoration: none;}
+  #sub .skinTb > tbody > tr > td .blue{font-size: 1.8rem;padding: 7px 27px; color: #fff; font-weight: 500;
+  border-radius: 6px; background: #1c7cdc;}
+  #sub .skinTb > tbody > tr > td .orange{font-size: 1.8rem; padding: 7px 27px; color: #fff; font-weight: 500;
+  border-radius: 6px; background: #ff9900;}
+  #sub .skinTb > tbody > tr > td .gray{font-size: 1.8rem; padding: 7px 27px; color: #fff; font-weight: 500;
+  border-radius: 6px; background: #666;}
+  #sub .skinTb > tbody > tr > td .black{font-size: 1.8rem; padding: 7px 27px; color: #fff; font-weight: 500;
+  border-radius: 6px; background: #333;}
+  #sub .skinTb-td{text-align: left;}
+  #sub .skinTb-sbj.v2{padding-left: 36px;}
+  #sub .skinTb-sbj.v3{text-align: left;}
+  #sub .skinTb-th{padding-left: 25px;}
+  #sub .skinTb-th a:hover{text-decoration: none;}
+  .txt-center {text-align: center !important;}
+  #sub .finance{text-align: right; color: #000;}
+  .ui-datepicker-trigger{margin-left: 11px; width: 78px; height: 50px; background: url(/page/hc-education/image/content/calendar_01.png) 50% 50% no-repeat;
+  background-size: cover; vertical-align: middle;}
+  .ui-datepicker-trigger img {display: none;}
+    
+@media (max-width:1399px) {
+  #sub{padding-top:60px}
+  #sub .skinIptTxt.v6{flex-basis: 39.5%;}
+  #sub .skinIptTxt.v7{height: 50px; flex-basis: 48%;}
+}
+  
+@media (max-width:1024px) {
+  #sub .skinIptTxt.v2,
+  #sub .skinIptTxt.v6{width: 39.5%;}
+} 
+  
+@media (max-width:991px) {
+  #sub .skinTb > tbody > tr > td .blue,
+  #sub .skinTb > tbody > tr > td .orange,
+  #sub .skinTb > tbody > tr > td .gray,
+  #sub .skinTb > tbody > tr > td .black{font-size: 1.6rem; white-space: nowrap;}
+  #sub .skinTb-td{padding-left: 25px;}
+  #sub .skinTb-th{padding-left: 18px;}
+  #sub .skinIptTxt.v2,
+  #sub .skinIptTxt.v6{flex-basis: 42.5%; width: 42.5%;}
+  #sub .skinIptTxt.v7{flex-basis: 61%;}
+  .ui-datepicker-trigger{margin-left: 10px;}
+}   
+@media (max-width:768px) {
+  #sub .skinTb > tbody > tr > td{font-size: 15px;}
+  #sub .skinIptTxt.v8{width: 100%;}
+
+}
+@media (max-width:760px) {
+  #content-bx{padding-top: 40px;}
+  .ui-datepicker-trigger{height: 40px; border-radius: 20px;}
+  .skinTb-data-bgSbj >.skinTb-tr >.skinTb-sbj{background: #fff; border: 1px solid #d8d8d8; border-width: 0 1px 1px 1px;}
+  #sub .skinIptTxt{height: 40px;}
+  #sub .skinIptTxt.v2,
+  #sub .skinIptTxt.v6{width: 63%; height: 40px; flex-basis: 63%;}
+  #sub .skinIptTxt.v5{height: 40px; width:44%;}
+  #sub .skinIptTxt.v7{height: 40px; width: 63%; flex-basis: 63%;}
+  #sub .skinIptTxt.v8{height: 40px; margin-top: 10px;}
+  #sub .skinSelectBox{height: 5rem; margin-top: 10px;}
+  #sub .skinTb-td{padding-left: 10px;}
+  #sub .skinTb { font-size: 13px;}
+  #sub .skinTb > tbody > tr > td{font-size: 13px;}
+  #sub .inner{padding:0 10px;}
+  #sub .finance{font-size: 14px;}
+  #sub .skinTb > tbody > tr > td .blue{font-size: 1.4rem; padding: 5px 15px;}
+  #sub .skinTb > tbody > tr > td .orange{font-size: 1.4rem; padding: 5px 15px;}
+  #sub .skinTb > tbody > tr > td .gray{font-size: 1.4rem; padding: 5px 15px;}
+  #sub .skinTb > tbody > tr > td .black{font-size: 1.4rem; padding: 5px 15px;}
+  #sub .skinTb-sbj.v2{padding-left: 10px;}
+}
+
+@media (max-width:500px) {
+  #sub .skinIptTxt.v2,
+  #sub .skinIptTxt.v6{width: 69%; flex-basis: 69%;}
+  #sub .skinIptTxt.v7{height: 40px; width: 63%; flex-basis: 69%;}
+}  
+
+
+/* 비주얼 박스 */
+
+#visual-bx{height: 500px; z-index: 100;}
+#visual-bx img.bg-img{
+display: block; position: relative; width: 1920px; left: 50%; margin-left: -960px; height: 500px; image-rendering: -webkit-optimize-contrast;}
+#visual-bx img:nth-child(2).bg-img,
+#visual-bx img:nth-child(3).bg-img,
+#visual-bx img:nth-child(4).bg-img,
+#visual-bx img:nth-child(5).bg-img,
+#visual-bx img:nth-child(6).bg-img{display: none;}
+#visual-bx .visual_text{position: absolute; top: 207px; left: 50%; transform: translate(-50%); text-align: center;}
+#visual-bx .visual_text h1{font-size: 58px; color: #fff; font-weight: 600;}
+#visual-bx .breadcrumb{position: relative; padding-top: 12px;}
+#visual-bx .breadcrumb a{position: relative; color: #fff;}
+#visual-bx .breadcrumb .home{display: inline-block; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -336px -218px;
+background-size: 368px 309px; width: 22px; height: 20px; vertical-align: middle;}
+#visual-bx .breadcrumb .depth02,
+#visual-bx .breadcrumb .depth01{padding-left: 62px;}
+#visual-bx .breadcrumb a::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -157px -269px;
+background-size: 368px 309px; width: 29px; height: 29px; position: absolute; left: 17px; bottom: -5px;}
+#visual-bx .breadcrumb a:nth-child(1):before{display: none;}
+
+@media (max-width:991px) {
+  #visual-bx .visual_text h1{font-size: 48px;}
+}
+
+@media (max-width:760px) {
+  #visual-bx{height: 290px;}
+  #visual-bx img.bg-img{height: 290px;}
+  #visual-bx .visual_text{width: 100%; top: 109px;}
+  #visual-bx .visual_text h1{font-size: 40px; line-height: 1.2;}
+  #visual-bx .breadcrumb .depth02,
+  #visual-bx .breadcrumb .depth01{padding-left: 50px; font-size: 15px;}
+  #visual-bx .breadcrumb a::before{left: 9px;}
+}
+
+/* 타이틀 박스 */
+#content-bx{color: #111;}
+#title-bx{position: relative;  padding: 68px 0; color: #111; border-bottom: 1px solid #ccc;}
+#title-bx .title{display: flex; align-items: center; justify-content: space-between;}
+#title-bx .title h2{font-size: 45px; line-height: 1.5; font-weight: 600;}
+#title-bx .title .btn_box a{position: relative; font-size: 0; display: inline-block; vertical-align: middle; background: url(/page/hc-education/image/ed_sprites.png)no-repeat; width: 55px; height: 56px; background-size: 368px 309px;}
+#title-bx .title .btn_box .share{background-position: -270px -5px;  margin-right: 5px;}
+#title-bx .title .btn_box .share:hover{background-position: -270px -71px;}
+#title-bx .title .btn_box .print{background-position: -79px -197px;}
+#title-bx .title .btn_box .print:hover{background-position: -145px -197px;}
+
+.infomation-bx{position: relative;  margin: 0 0 58px; width: 100%; padding: 64px 100px 57px 59px; background: #f4f4f4; border-radius: 24px;}
+.infomation-bx > div{display: flex; align-items: center;}
+.infomation-bx > div img{display: block; width: 97px; height: 100px;}
+.infomation-bx > div .info{display: block; width: 166px; height: 121px;}
+.infomation-bx > div strong{display: inline-block; padding-bottom: 10px;}
+.infomation-bx > div p{padding-left: 41px; line-height: 1.5; color: #313131;}
+
+@media (max-width:991px) {
+  .infomation-bx > div p br{display: none;}
+  .infomation-bx > div strong{display: block;}
+}  
+
+@media (max-width:760px) {
+  #title-bx{padding: 30px 0;}
+  #title-bx .title h2{font-size: 2.8rem;}
+  .infomation-bx{padding: 20px; margin: 0 0 30px;}
+  .infomation-bx > div{flex-direction: column; align-items: normal;}
+  .infomation-bx > div img{display: none;}
+  .infomation-bx > div .info{display: none;}
+  
+  .infomation-bx > div p{padding-left: 0; padding-top: 0; font-size: 1.6rem; color: #111;}
+}
+
+
+/* 서브 컨텐츠 */
+
+#sub .titLv{font-weight: 600; font-size: 3.6rem; margin-bottom: 2.3rem;}
+#sub .titLv:not(:first-child){margin-top: 4.9rem;}
+#sub .titLv2{font-weight: 600; font-size: 2.2rem;  padding-left: 20px; color: #111;}
+#sub .titLv2::before{content: ''; display: block; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -336px -274px;
+background-size: 368px 309px; width: 9px; height: 25px; position: absolute; left: 0; top: 2px;}
+#sub .titLv3{padding-left: 0; font-size: 2rem; font-weight: 500;}
+#sub .titLv3::before{display: none;}
+.titLv3 + .pgraph{padding-left: 0; color: #454545;}
+.listLv{margin-left: 22px;}
+.listLv >li{padding-top: 0.9rem; font-size: 1.8rem; font-weight: 500; color: #333; word-break: break-all;}
+.listLv >li .red{color: #ff0000;}
+.listLv >li::before{content: ''; position: absolute; top: 14px; left: -3px; display: block; background: url(/page/hc-education/image/ed_sprites.png) no-repeat -163px -157px;
+background-size: 368px 309px; width: 10px; height: 13px; border: none; transform: rotate(0deg);}
+.listLv + .titLv2{margin-top: 30px;}
+.listLv2 >li{font-size: 1.6rem; color: #555; font-weight: 400; padding-left: 0;}
+.listLv2 >li::before{display: none;}
+.listLv3 >li{color: #333; font-weight: 400; padding-left: 17px; margin-top: 0.2rem; margin-bottom: 2px;  font-size: 1.6rem;}
+.listLv3 >li::before{content: ''; display: block; position: absolute; top: 11px; left: 2px; background: url(/page/hc-education/image/ed_sprites.png)no-repeat -355px -294px;
+background-size: 368px 309px; width: 7px; height: 2px;}
+.listLv4{padding-left: 0;}
+.listLv4 >li{color: #555; font-size: 1.5rem; padding-left: 10px;}
+.listLv4 >li::before{content: ''; display: block; position: absolute; top: 10px; left: 0; background: url(/page/hc-education/image/ed_sprites.png) no-repeat -321px -243px;
+width: 3px; height: 3px; background-size: 368px 309px;}
+.pgraph{color: #555; padding-top: 0;}
+.pgraph.v2{padding-left: 20px;}
+.pgraph.v3{padding-left: 20px; font-weight: 500; color: #333; font-size: 1.8rem;}
+#sub .caution{display: flex; font-weight: 400; font-size: 16px; color: #e12828; word-break: keep-all; margin: 5px 0px;}
+#sub .caution.v2{color: #3a64ca;}
+#sub .contsBtn{border: 1px solid #111;}
+.contsBtn > a:after {content: ''; display: block; width: 18px; height: 18px; background: url(/page/hc-education/image/sub/sp_dq.png) no-repeat;
+background-size: 520px 1500px; position: absolute; top: 50%; right: 16px; image-rendering: -webkit-optimize-contrast;}
+.contsBtn::before{background: #111;}
+.contsBtn{width: 264px; margin: 0; max-width: 100%;}
+.contsBtn > span{padding:0 40px 0 23px;}
+.skinTxa-left{margin-bottom: 13px;}
+.contsBtnSmall{height: 34px; line-height: 34px;}
+.contsBtnSmall.v2{margin-right: 0;}
+.skinBtnBo {border: 1px solid #111;}
+.skinBtnBo::before{background: #111;}
+.imptBox{padding: 2rem 3rem; color: #707070;}
+.design_btn{display: flex; justify-content: center;}
+.design_btn a{display: inline-block; color: #000; font-size: 18px;  text-align: center; width: 20%;  height: 5.5rem; line-height: 5.4rem; margin-right: 10px; border-radius: 30px; border: 1px solid #818181;}
+.design_btn a:hover{color: #fff; font-weight: 600; background: linear-gradient(120deg, rgba(95,151,80,1) 20%, rgba(32,112,175,1) 100%); text-decoration: none;}
+.design_btn a > span{display: block; overflow: hidden; width: 100%; margin-right: 10px; white-space: nowrap; text-overflow: ellipsis; padding: 0 20px;}
+.skinColor-fmInfo{display: inline-block; padding-left: 15px;}
+.col3{width: 19%;}
+
+@media (max-width:991px) {
+  .contsBtn{width: 92%}
+}
+@media (max-width:760px) {
+  .pgraph.v3{font-size: 1.6rem;}
+  .pgraph.v3 br{display: none;}
+  #sub .titLv{margin-bottom: 1.3rem; font-size: 2.4rem;}
+  .listLv >li{font-size: 1.6rem;}
+  .listLv >li::before{top: 10px;}
+  .listLv3 >li{font-size: 1.5rem; margin-top: 0.3rem;}
+  .listLv3 >li::before{top: 9px; }
+  .listLv4 >li::before{top: 7px;}
+  #sub .caution{font-size: 14px;}
+  .skinMb-0{font-size: 14px;}
+  .skinTxa-left{margin-bottom: 0;}
+  .contsBtnSmall.v2{height: 34px; line-height: 34px;}
+  .imptBox{font-size: 1.5rem;}
+  .design_btn{display: flex; justify-content: space-between;}
+  .design_btn a{width: 100%;}
+  .design_btn a > span{font-size: 14px;}
+  .col3{width: 25%;}
+}  
+@media (max-width:360px) {
+  .skinBtnBo + .skinBtnBo{margin-left: 9px;}
+  .col3{width: 26%;}
+}
+
+
+
