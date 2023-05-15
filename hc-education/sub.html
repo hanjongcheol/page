@@ -160,7 +160,7 @@
 		var pageUrl = $(location).attr('href');
 		if (pageUrl.match("git")){
 			$.ajax({	
-				url: "https://hanjongcheol.github.io/page/hc-education/contents",
+				url: "https://api.github.com/repos/hanjongcheol/page/contents/hc-education/contents",
 				success: function (data) {
 					for (var i = 0; i < data.length; i++) {
 						$('.puble-index .view div').append('<p><a href="/page/hc-education/contents/'+data[i].name+'">'+ data[i].name +'</a><button class="copy-html">HTML복사</button></p>');
