@@ -17,13 +17,38 @@
 
 	<link rel="stylesheet" href="/page/hc-education/css/style.css">
 	<link rel="stylesheet" href="/page/hc-education/css/sub.css">
+	<link rel="stylesheet" href="/page/hc-education/css/content.css">
 	
-	<script src="/page/hc-education/js/sub.js"></script>
 	<script src="/page/hc-education/js/script.js"></script>
 
 </head>
 <body>
 	<div id="wrapper" class="page-wrap">
+		<div id="mask01"></div>
+		<div id="pop_up">
+			<div class="entry">
+				<strong>인증번호 입력</strong>
+				<div class="pop_up_close"></div>
+			</div>
+			<div class="code">
+				<span>인증번호</span>
+				<input type="text" class="verification" placeholder="인증번호 6자리">
+				<div class="info">
+					<p>
+						회원님의 휴대폰으로 전송된 인증번호 6자리를 입력해 주세요.<br/>
+						전상망의 상태에 따라 SMS 전송에 1~2분의 시간이 소요될 수 있습니다.
+					</p>
+				</div>
+				<div class="design_btn v4" role="button">
+					<a href="#">
+						<span>확인</span>
+					</a>
+					<a href="#" class="cancel">
+						<span>취소</span>
+					</a>
+				</div>
+			</div>
+		</div>
 		<ul class="skipnav"> 
 			<li><a href="#A-Gnb-focus">주메뉴 바로가기</a></li>
 			<li><a href="#A-Contents-focus">본문 바로가기</a></li>
@@ -76,13 +101,14 @@
 	</div>
 </body>
 </html>
+
 <!--[d] 인클루드, 디자인 확인 용 개발 시 제거-->
 <div class="puble-index">
 	<a href="#" class="close" onclick="$('.puble-index').remove();return false;">✕</a>
 	<a href="#" class="btn sub upload"></a>
 	<div class="pre-view">
-		<iframe id="preview-pc" src="/page/hc-education/main.html"></iframe>
-		<iframe id="preview-mobile" src="/page/hc-education/main.html"></iframe>
+		<iframe id="preview-pc" src="/page/hc-education/"></iframe>
+		<iframe id="preview-mobile" src="/page/hc-education/"></iframe>
 	</div>
 	<div class="view">
 		<strong>
@@ -131,7 +157,7 @@
 		var pageUrl = $(location).attr('href');
 		if (pageUrl.match("git")){
 			$.ajax({	
-				url: "/page/hc-education/",
+				url: "https://api.github.com/repos/hanjongcheol/page/hc-education",
 				success: function (data) {
 					for (var i = 0; i < data.length; i++) {
 						$('.puble-index .view div').append('<p><a href="/page/hc-education/'+data[i].name+'">'+ data[i].name +'</a><button class="copy-html">HTML복사</button></p>');
