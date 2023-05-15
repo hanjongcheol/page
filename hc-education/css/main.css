@@ -145,7 +145,6 @@ background-size: 368px 309px; position: absolute; left: 14px; top: 50%; transfor
 #shortcut .classification li .supplement::before{background-position: -276px -269px; width: 28px; height: 25px;}
 #shortcut .classification li .job::before{background-position: -336px -79px; width: 27px; height: 25px;}
 #shortcut .classification li .art::before{background-position: -336px -114px; width: 26px; height: 25px;}
-#shortcut .classification li .art::before{background-position: -336px -114px; width: 26px; height: 25px;}
 #shortcut .classification li .refinement::before{background-position: -336px -183px; width: 23px; height: 25px;}
 #shortcut .classification li .join::before{background-position: -235px -269px; width: 31px; height: 25px;}
 #shortcut .objet ul, #shortcut .classification ul{display: flex; align-items: center;}
@@ -291,6 +290,9 @@ width: 32px; height: 32px; position: absolute; right: 8px; top: 50%; transform: 
 #guide .menu ul li:nth-child(3) a,
 #guide .menu ul li:nth-child(4) a{margin-bottom: 0;}
 #guide .menu ul li a img{display: inline-block; width: 84px; height: 75px;}
+#guide .menu ul li a .menu2{width: 64px; height: 62px;}
+#guide .menu ul li a .menu3{width: 66px; height: 64px;}
+#guide .menu ul li a .menu4{width: 72px; height: 72px;}
 #guide .menu ul li a span{display: block; font-size: 20px; font-weight: 500;}
 #guide .menu ul li a:hover span{font-weight: 600;}
 #guide .menu ul li a .club{padding-bottom: 5px;}
