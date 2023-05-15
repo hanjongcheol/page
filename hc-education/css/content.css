@@ -704,7 +704,7 @@ background-size: 832px 757px; width: 24px; height: 25px; display: block; positio
 }  
 
 @media (max-width: 760px){
-  .vison{padding: 40px 0;}
+  .vison{padding: 0 0 40px;}
   .vison_wrap::before{width: 67px; height: 64px; top: -55px; background-size: cover;}
   .vison_box{padding-top: 40px; margin-top: 110px;}
   .vison_box .misson .misson_tit strong,
@@ -761,7 +761,7 @@ background-size: 832px 757px; position: absolute; left: 50%; top: 50%; transform
 }
 
 @media (max-width: 760px){
-  .system{padding: 40px 0;}
+  .system{padding: 0 0 40px;}
   .bank{flex-direction: column; align-items: inherit; padding: 0 0 30px;}
   .bank:nth-child(9){padding-bottom: 0;}
   .bank .recruit_img{width: 100%;}
@@ -814,7 +814,7 @@ border-bottom: 1px solid #ddd;}
 }
 
 @media (max-width: 760px){
-  .enterprise{padding: 40px 0;}
+  .enterprise{padding: 0 0 40px;}
   .enterprise .direction > ul{padding-top: 0;}
   .enterprise .direction > ul > li{width: 100%; margin-right: 0;}
   .enterprise .direction > ul li > div{margin-bottom: 30px;}
@@ -837,7 +837,7 @@ left: 50%; top: 0; z-index: -1; transform: translate(-50%);}
 .learn img{display: block; max-width: 100%;}
 
 @media (max-width: 760px){
-  .club{padding: 40px 0;}
+  .club{padding: 0 0 40px;}
   .learn{height: 470px;}
   .learn::before{height: 470px;}
 } 
@@ -896,7 +896,7 @@ background-size: 832px 757px; width: 38px; height: 38px; position: absolute; lef
 }
 
 @media (max-width: 760px){
-  .recruit{padding: 40px 0;}
+  .recruit{padding: 0 0 40px;}
   .recruit .document{padding: 22px 0 20px 20px;}
   .recruit .way,
   .recruit .plan,
