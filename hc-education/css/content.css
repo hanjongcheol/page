@@ -38,13 +38,10 @@ background-size: 1000px 2000px; width: 18px; height: 18px; display: inline-block
 /* sub_회원가입양식, sub_로그인 */
 .content1 .design_btn.v3{display: block; text-align: center; margin-top: 70px;}
 .content1 .design_btn.v3 a:hover{text-decoration: none;}
-.member_wrap{padding:90px 0 327px;font-size:0}
-.member_wrap.v2{padding:90px 0 60px;}
-.member_wrap.v3{padding:90px 0 262px;}
-.member_wrap.v4{padding: 18px 0 0;}
+.member_wrap{padding:0 0 327px;font-size:0}
+.member_wrap.v2{padding:0 0 60px;}
+.member_wrap.v3{padding:0 0 262px;}
 .member_wrap.type_find{padding-bottom:267px;}
-.withdrawal_wrap{padding-top: 92px;}
-.password_wrap{padding-top: 92px;}
 .member_wrap.type_withdrawal{padding:5px 0 180px;}
 .member_wrap.type_signup{padding-bottom:326px;}
 .member_wrap.type_terms{padding-bottom:261px;}
@@ -422,7 +419,6 @@ color: #fff; font-size: 1.4rem; vertical-align: middle; margin-left: 10px;}
 .member_wrap .withdrawal_area .check_area{margin-top:0.6rem;font-size:1.6rem;line-height:2.6rem;font-weight:300;color:#707070;letter-spacing:0;
 padding-left: 19px;}
 .member_wrap .withdrawal_area .check_area input[type="checkbox"] + label{display: inline; color: #555;}
-.member_wrap .member_info_area{margin-top:35px;}
 .member_wrap .member_info_area + .btn_login{margin-top:5.8rem;}
 .member_wrap .member_info_area .info_list{margin-top:2.4rem;}
 .member_wrap .member_info_area .info_list .col3{width:13%;}
@@ -622,7 +618,7 @@ background: #fff; border-radius: 100%;}
 }  
 
 /* sub_교육장소안내 */
-.education{padding: 92px 0 258px;}
+.education{padding: 0 0 258px;}
 .education img{display: block; max-width: 100%;}
 .boGallery{border: none; display: flex; flex-wrap: wrap; justify-content: space-between;}
 .boGallery >li{display: block; float: none;}
@@ -664,7 +660,7 @@ width: 24px; height: 28px; background-size: 832px 757px; position: absolute; lef
 } 
 
 /* sub_비전목표 */
-.vison{padding: 92px 0 258px;}
+.vison{padding: 0 0 258px;}
 .vison_imgbx img{display: block; max-width: 100%;}
 .vison_wrap{position: relative; z-index: 2;}
 .vison_wrap::before{content: ''; display: block; width: 134px; height: 128px; background: url(/page/hc-education/image/content/arrow.png)no-repeat;
@@ -736,7 +732,7 @@ background-size: 832px 757px; width: 24px; height: 25px; display: block; positio
 
 
 /* sub_제도소개 */
-.system{padding: 92px 0 258px;}
+.system{padding: 0 0 258px;}
 .bank{display: flex; align-items: center; padding:10px 0 30px;}
 .bank:nth-child(9){padding-bottom: 23px;}
 .bank .recruit_img{position: relative; width: 175px; height: 175px; background: #f7f7f7; border-radius: 40px;}
@@ -776,7 +772,7 @@ background-size: 832px 757px; position: absolute; left: 50%; top: 50%; transform
 }  
 
 /* sub_주요사업 */
-.enterprise{padding: 92px 0 331px;}
+.enterprise{padding: 0 0 331px;}
 .enterprise .direction > ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 13px;}
 .enterprise .direction ul li > div{border: 1px solid #ddd; width: 351px; padding-bottom: 21px; border-radius: 6px; margin-bottom: 73px;}
 .enterprise .direction ul li:nth-child(4) > div,
@@ -834,7 +830,7 @@ border-bottom: 1px solid #ddd;}
 }  
 
 /* sub_학습동아리 개요 */
-.club{padding: 92px 0 333px;}
+.club{padding: 0 0 333px;}
 .learn{position: relative; display: flex; justify-content: center; align-items: center; height: 805px;}
 .learn::before{content: ''; background: url(/page/hc-education/image/content/club_bg.png)no-repeat; width: 1920px; height: 805px; display: block; position: absolute;
 left: 50%; top: 0; z-index: -1; transform: translate(-50%);}
@@ -848,7 +844,7 @@ left: 50%; top: 0; z-index: -1; transform: translate(-50%);}
 
 
 /* sub_학습동아리 등록안내 */
-.recruit{padding: 92px 0 261px;}
+.recruit{padding: 0 0 261px;}
 .recruit .document{padding: 22px 0 57px 20px;}
 .recruit .document ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .recruit .document ul li{font-size: 0; margin-bottom: 22px;}

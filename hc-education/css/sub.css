@@ -4,7 +4,7 @@
   .txa_right{text-align: right;}
   .skinTb td > img{display: inline-block; margin: 2px 0 0;}
   .hide-on-large{display: none !important;}
-
+  #content-bx{padding-top: 92px;}
   #sub_container{}
   #sub{overflow: hidden; padding-top: 139px;}
   #sub .skinTb::before { border-color: #313131;}
