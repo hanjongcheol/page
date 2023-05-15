@@ -655,6 +655,7 @@ width: 24px; height: 28px; background-size: 832px 757px; position: absolute; lef
 @media (max-width: 760px){
   .boGallery{padding-bottom: 0;}
   .boGallery >li:nth-child(n){width:100%; margin-right: 0;}
+  .boGallery .thumbnail .centered img{width: 100%;}
   .boGallery.photo .boGallery-sbj{padding: 18px 15px 0 31px; height: 44px; line-height: 24px; -webkit-line-clamp: 1;}
   .boGallery.photo .boGallery-sbj::before{top: 14px;}
 } 
