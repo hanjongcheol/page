@@ -70,12 +70,22 @@ ObjGnb.init(function(){
 			}
 			$('.bg_pc').css('height',highestBox); 
 		});
-	$('.bg_pc').on('mouseleave', function() {
-		$('.depth-01 .active').removeClass('active')
-		$('.bg_pc , #mask').hide();
-	});
 	}
 }, '#header.pc-mode .depth-01 li')
+.on({
+	'mouseleave': function() { 
+		$('#header').removeClass('active');
+		$('.depth-01 .active').removeClass('active')
+		$('.bg_pc, #mask').stop().hide();
+	}
+}, '#header.pc-mode .depth-01')
+.on({
+	'focusout': function() { 
+		$('#header').removeClass('active');
+		$('#header h2').removeClass('active');
+		$('.depth-02, .bg_pc, #mask').stop().hide();
+	}
+}, '#header .depth-01 li h2')
 
 .on({
 	'mouseover': function(e) {
