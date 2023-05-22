@@ -135,5 +135,30 @@ $(window).on('resize', function() {
 	}, 500);
 });
 
+$(document).ready(function (){
+	$(".logout-btn").click(function (){
+		$.ajax({
+			url: "/egf/ext/student/logout",
+			type : "POST",
+			dataType: "json",
+			cache: false,
+			success: function(data) {
+				if(data.result == "SUCCESS_001") {
+					alert("로그아웃 되었습니다. 홈페이지로 이동합니다.");
+					// location.href = $("#siteUrl").val();
+					location.href = "/portal";
+				}else {
+					alert(data.message);
+				}
+			},
+			error : function () {
+				alert("Server Error");
+			},
+			complete : function () {
+				fnEndLoading();
+			}
+		});
+	});
+});
 
 

@@ -130,23 +130,23 @@ font-weight: 500; font-size: 18px; border-radius: 15px; height: 60px; box-shadow
 #shortcut .objet_box li .wrap::before{width: 0; height: 0;}
 #shortcut .objet_box li a::before, #shortcut .classification li a::before{content: ''; background: url(/page/hc-education/image/ed_sprites.png) no-repeat; width: 28px; height: 34px;
 background-size: 368px 309px; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);}
-#shortcut .objet_box li .school::before{background-position: -211px -198px;}
-#shortcut .objet_box li .elementary::before{background-position: -5px -271px;}
-#shortcut .objet_box li .middle::before{background-position: -43px -270px;}
-#shortcut .objet_box li .aduit::before{background-position: -81px -269px;}
-#shortcut .objet_box li .sir::before{background-position: -119px -269px;}
+#shortcut .objet_box li .NOSCHOOL::before{background-position: -211px -198px;}
+#shortcut .objet_box li .ELEMENTARY::before{background-position: -5px -271px;}
+#shortcut .objet_box li .MIDDLE::before{background-position: -43px -270px;}
+#shortcut .objet_box li .ADULT::before{background-position: -81px -269px;}
+#shortcut .objet_box li .SIR::before{background-position: -119px -269px;}
 #shortcut .objet_box li a:hover, #shortcut .classification li a:hover{background: #e8ecf7;}
-#shortcut .objet_box li a:hover{outline: 1px solid #c3d4fb;}
+#shortcut .objet_box li a:hover{outline: 1px solid #c3d4fb; cursor: pointer;}
 #shortcut .classification li a:hover{outline: 1px solid #ffcd9c;}
 #shortcut .objet_box li:nth-child(6n) a, #shortcut .classification li:nth-child(6n) a{margin-right: 0;}
 #shortcut .objet_box, #shortcut .classification_box{display: flex; align-items: center;}
 #shortcut .classification_box{margin-top: 18px;}
-#shortcut .classification li .literacy::before{background-position: -196px -269px; width: 29px; height: 28px;}
-#shortcut .classification li .supplement::before{background-position: -276px -269px; width: 28px; height: 25px;}
-#shortcut .classification li .job::before{background-position: -336px -79px; width: 27px; height: 25px;}
-#shortcut .classification li .art::before{background-position: -336px -114px; width: 26px; height: 25px;}
-#shortcut .classification li .refinement::before{background-position: -336px -183px; width: 23px; height: 25px;}
-#shortcut .classification li .join::before{background-position: -235px -269px; width: 31px; height: 25px;}
+#shortcut .classification li .LITERACY::before{background-position: -196px -269px; width: 29px; height: 28px;}
+#shortcut .classification li .SUPPLEMENT::before{background-position: -276px -269px; width: 28px; height: 25px;}
+#shortcut .classification li .JOB::before{background-position: -336px -79px; width: 27px; height: 25px;}
+#shortcut .classification li .ART::before{background-position: -336px -114px; width: 26px; height: 25px;}
+#shortcut .classification li .REFINEMENT::before{background-position: -336px -183px; width: 23px; height: 25px;}
+#shortcut .classification li .JOIN::before{background-position: -235px -269px; width: 31px; height: 25px;}
 #shortcut .objet ul, #shortcut .classification ul{display: flex; align-items: center;}
 #shortcut .objet ul li, #shortcut .classification ul li{flex: 1;}
 
@@ -328,7 +328,7 @@ border: 2px solid transparent; border-radius: 10px;
     #guide .guide_wrap .guide_division ul{padding-top: 112px;}
     #guide .guide_wrap .guide_division ul::before{top: 70px;}
     #guide .guide_tit span{font-size: 40px;}
-    #guide .guide_wrap .guide_short .register{margin-bottom: 40px;}
+    #guide .guide_wrap .guide_short .register{margin-bottom: 4px;}
     #guide .menu{width: 100%;}
     #guide .menu{padding-top: 30px;}
     #guide .menu ul li a{height: 184px;}
